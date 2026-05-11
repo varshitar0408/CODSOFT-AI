@@ -1,4 +1,3 @@
-# Menu Based Chatbot
 
 print("===================================")
 print("      WELCOME TO AI CHATBOT")
@@ -21,20 +20,16 @@ while True:
 
     choice = input("\nEnter your choice: ")
 
-    # Greeting
     if choice == "1":
         print("Bot: Hello! Hope you are doing well.")
 
-    # About chatbot
     elif choice == "2":
         print("Bot: I am a Rule-Based Chatbot created using Python.")
 
-    # Joke
     elif choice == "3":
         print("Bot: Why did the computer go to the doctor?")
         print("Bot: Because it caught a virus!")
 
-    # Calculator
     elif choice == "4":
 
         num1 = int(input("Enter first number: "))
@@ -63,15 +58,12 @@ while True:
         else:
             print("Invalid operation")
 
-    # Motivation quote
     elif choice == "5":
         print("Bot: Believe in yourself and keep learning!")
 
-    # Exit
     elif choice == "6":
         print("Bot: Goodbye", name + "!")
         break
 
-    # Invalid choice
     else:
         print("Bot: Invalid choice. Please try again.")
