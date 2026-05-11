@@ -3,7 +3,6 @@ import math
 HUMAN = "X"
 AI = "O"
 
-# Create board
 def create_board():
     return [" " for _ in range(9)]
 
@@ -75,14 +74,12 @@ def get_best_move(board):
 
     return best_move
 
-# Main game loop
 def play():
     board = create_board()
     print("You are X, AI is O")
     display(board)
 
     while True:
-        # Human move
         try:
             move = int(input("Enter your move (0-8): "))
         except:
@@ -103,7 +100,6 @@ def play():
             print("Draw!")
             break
 
-        # AI move
         ai_move = get_best_move(board)
         board[ai_move] = AI
         print(f"AI plays at {ai_move}")
